@@ -6,7 +6,7 @@ function PostList({ token }) {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
   const [file, setFile] = useState(null);
-  const [fileExtension, setFileExtension] = useState("txt");
+  const [fileExtension, setFileExtension] = useState("c");
   const [showingUserPosts, setShowingUserPosts] = useState(false); // State to toggle view
   const [codeSnippets, setCodeSnippets] = useState({});
   useEffect(() => {
