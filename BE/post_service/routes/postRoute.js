@@ -70,7 +70,7 @@ router.get('/post',authMiddleware, async(req,res)=>{
 
 //get own post
 
-router.get('/mypost',authMiddleware, async(req,res)=>{
+router.get('/post/mypost',authMiddleware, async(req,res)=>{
   const posts = await Post.find({ email: { $eq: req.user.email } });
   res.json(posts);
 })

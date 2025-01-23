@@ -6,7 +6,7 @@ const jwt = require('jsonwebtoken');
 const User=require('../models/User')
 
 
-router.post('/signUp', async(req,res)=>{
+router.post('/user/signUp', async(req,res)=>{
   try {
     const { email, password } = req.body;
 
@@ -29,7 +29,7 @@ if(!password){
   }
 })
 
-router.post('/signIn', async(req,res)=>{
+router.post('/user/signIn', async(req,res)=>{
   try {
     const { email, password } = req.body;
 

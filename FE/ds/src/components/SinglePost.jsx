@@ -11,7 +11,7 @@ const SinglePost = ({token}) => {
   }, [postId]);
 
   const fetchPost = async () => {
-    const res = await fetch(`http://localhost:5002/post/${postId}`, {
+    const res = await fetch(`http://localhost/post/${postId}`, {
       headers: { Authorization: `Bearer ${token}` },
     });
     const data = await res.json();
